@@ -1,2 +1,1 @@
-# snake-chat
-A more difficult NodeJS Project
+# unfinished-3d-gmae

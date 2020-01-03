@@ -1,0 +1,10 @@
+html, body{
+    margin: 32px;
+    min-height: 100%;
+    background: #007DEF;
+}
+
+/*#myCanvas {
+    min-width: 100vh; 
+    min-height: 100vh; 
+}*/

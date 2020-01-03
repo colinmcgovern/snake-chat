@@ -1,0 +1,24 @@
+{
+  "name": "grid-game",
+  "version": "0.0.1",
+  "description": "my first socket.io app",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.4"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "main": "client.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colinmcgovern/unfinished-3d-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colinmcgovern/unfinished-3d-game/issues"
+  },
+  "homepage": "https://github.com/colinmcgovern/unfinished-3d-game#readme"
+}

@@ -1,0 +1,40 @@
+<head>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest">
+        <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+
+
+  <meta charset="utf-8"/>
+  <script src="https://cdn.socket.io/socket.io-1.0.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <div style="display:none;">
+    <img id="left"
+     src="images/left.png">
+     <img id="right"
+     src="images/right.png">
+     <img id="down"
+     src="images/down.png">
+     <img id="up"
+     src="images/up.png">
+     <img id="map"
+     src="images/map.png">
+  </div>
+  
+</head>
+
+<body>
+	<input id="message" type="text" /><button id="send" width="120">Send</button><br>
+    <canvas width=600 height=600 id="myCanvas"></canvas>
+    <script src="client.js"></script> 
+</body>
