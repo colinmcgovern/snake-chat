@@ -24,7 +24,7 @@ io.on('connection', function(socket){
         var ip_found = 0;
         var largest_id = -1;
 
-        id_to_ip.foreach(function(ip, id) {
+        id_to_ip.forEach(function(ip, id) {
 
         	//Player already exists
             if(ip===socket.handshake.address.address){
@@ -35,18 +35,18 @@ io.on('connection', function(socket){
                 }
             }
 
-        });
+            //Player does not exist yet
+	        if(!ip_found){
+	        	id_to_ip[largest_id + 1] = socket.handshake.address.address;
+	        	io.emit('PLAYER_ID',id);
+	        	var new_player = {
+	        		pos_x: 64,
+	        		pos_y: 64,
+				}
+				players[id] = new_player;
+	        }
 
-        //Player does not exist yet
-        if(!ip_found){
-        	id_to_ip[largest_id + 1] = socket.handshake.address.address;
-        	io.emit('PLAYER_ID',id);
-        	var new_player = {
-        		pos_x: 64,
-        		pos_y: 64,
-			}
-			players[id] = new_player;
-        }
+        });
 
         io.emit('GRID_SIZE', GRID_SIZE);
         io.emit('players',players);
